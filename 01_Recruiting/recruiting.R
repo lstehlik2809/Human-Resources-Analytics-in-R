@@ -1,17 +1,19 @@
+# IDENTIFYING THE BEST RECRRUITING SOURCE ----
+
 library(tidyverse)
 
-# Uploading the dataset
+# Uploading the dataset ----
 recruitment <- read_csv("./00_Data/recruitment_data.csv")
 head(recruitment)
 names(recruitment)
 summary(recruitment)
 
-# Number of employees hired through given source
+# Number of employees hired through given source ----
 recruitment %>% 
   count(recruiting_source) %>%
   arrange(desc(n))
 
-# Assessing quality of hires through individual sources
+# Assessing quality of hires through individual sources ----
 # sales quota
 avg_sales <- recruitment %>%
   group_by(recruiting_source) %>%
