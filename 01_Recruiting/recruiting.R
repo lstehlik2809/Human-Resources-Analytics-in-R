@@ -1,4 +1,6 @@
 # IDENTIFYING THE BEST RECRRUITING SOURCE ----
+# Analyzing and visualizing recruiting data to determine which source of new 
+# candidates ultimately produces the best new hires
 
 library(tidyverse)
 
